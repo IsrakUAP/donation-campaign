@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             
-            <div className="navbar bg-base-100 max-w-screen-xl mx-auto">
+            <div className="navbar bg-base-100">
   <div className="flex-1">
     <img src="https://i.ibb.co/qF67VYq/Logo.png"/>
   </div>
@@ -13,7 +13,7 @@ const Navbar = () => {
       <NavLink
   to="/"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
+    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-semibold text-[18px]" : "font-semibold text-[18px]"
   }
 >
 Home
@@ -21,7 +21,7 @@ Home
 <NavLink
   to="/donation"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
+    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-semibold text-[18px]" : "font-semibold text-[18px]"
   }
 >
 Donation
@@ -29,7 +29,7 @@ Donation
 <NavLink
   to="/statistics"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
+    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-semibold text-[18px]" : "font-semibold text-[18px]"
   }
 >
 Statistics
