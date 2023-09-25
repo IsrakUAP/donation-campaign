@@ -1,7 +1,25 @@
 import React from 'react';
+import swal from 'sweetalert';
 
 const CardDetails = ({card}) => {
- const {description,image,price,title} = card ||{};
+ const {description,image,price,title,category_bg_color} = card ||{};
+ const categoryStyle = {
+    backgroundColor: category_bg_color
+};
+ const handleAddToDonation = ()=>{
+    const donationArray = [];
+    const donationItems = JSON.parse(localStorage.getItem('donation'));
+     if(!donationItems){
+        donationArray.push(card)
+        localStorage.setItem('donation',JSON.stringify(donationArray))
+        swal("Donation Added", "", "success");
+     }
+    else{
+        donationArray.push(...donationItems,card)
+        localStorage.setItem('donation',JSON.stringify(donationArray))
+        swal("Donation Added", "", "success");
+        }
+ }
     return (
         <div>
             <div className="max-w-screen-xl grid grid-cols-1 bg-base-200 mt-8">
@@ -9,7 +27,7 @@ const CardDetails = ({card}) => {
     <img src={image} className=" w-[100%] h-[700px] shadow-2xl" />
     <div className=' -mt-14 p-9 bg-[#0B0B0B80]'>
       
-      <button className="py-4 px-6 rounded-[4px] text-[20px] font-semibold text-white  bg-[#FF444A]">Donate ${price}</button>
+      <button onClick={handleAddToDonation} className="py-4 px-6 rounded-[4px] text-[20px] font-semibold text-white" style={categoryStyle}>Donate ${price}</button>
     </div>
     <div className='mt-7'>
     <h1 className="text-[40px] font-bold">{title}</h1>

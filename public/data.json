@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "picture": "https://i.ibb.co/5FLQxkz/Health.png",
         "image":"https://i.ibb.co/5MpWq85/Rectangle-4284.png", 
         "title": "Clean water for children",
@@ -12,7 +11,6 @@
         "price": 290.00
     },
     {
-        "id": 2,
         "picture": "https://i.ibb.co/rs7kD8t/Education.png",
         "image":"https://i.ibb.co/dBv0pGB/Rectangle-4288.png", 
         "title": "Good education",
@@ -24,7 +22,6 @@
         "price": 290.00
     },
     {
-        "id": 3,
         "picture": "https://i.ibb.co/1Tc0rNC/Clothing.png",
         "image":"https://i.ibb.co/kMCrDSD/Rectangle-4287.png", 
         "title": "Used Clothing Drive",
@@ -36,7 +33,6 @@
         "price": 290.00
     },
     {
-        "id": 4,
         "picture": "https://i.ibb.co/qNx19WZ/Food.png",
         "image":"https://i.ibb.co/VmHCtL1/Rectangle-4287-2.png", 
         "title": "Better Food for Everyone",
@@ -48,7 +44,6 @@
         "price": 290.00
     },
     {
-        "id": 5,
         "picture": "https://i.ibb.co/qNx19WZ/Food.png",
         "image":"https://i.ibb.co/VmHCtL1/Rectangle-4287-2.png", 
         "title": "Better Food for Everyone",
@@ -60,7 +55,6 @@
         "price": 290.00
     },
     {
-        "id": 6,
         "picture": "https://i.ibb.co/1Tc0rNC/Clothing.png",
         "image":"https://i.ibb.co/kMCrDSD/Rectangle-4287.png", 
         "title": "Used Clothing Drive",
@@ -72,7 +66,6 @@
         "price": 290.00
     },
     {
-        "id": 7,
         "picture": "https://i.ibb.co/rs7kD8t/Education.png",
         "image":"https://i.ibb.co/dBv0pGB/Rectangle-4288.png", 
         "title": "Good education",
@@ -84,7 +77,6 @@
         "price": 290.00
     },
     {
-        "id": 8,
         "picture": "https://i.ibb.co/5FLQxkz/Health.png",
         "image":"https://i.ibb.co/5MpWq85/Rectangle-4284.png", 
         "title": "Clean water for children",
@@ -96,7 +88,6 @@
         "price": 290.00
     },
     {
-        "id": 9,
         "picture": "https://i.ibb.co/5FLQxkz/Health.png",
         "image":"https://i.ibb.co/5MpWq85/Rectangle-4284.png", 
         "title": "Clean water for children",
@@ -108,7 +99,6 @@
         "price": 290.00
     },
     {
-        "id": 10,
         "picture": "https://i.ibb.co/rs7kD8t/Education.png",
         "image":"https://i.ibb.co/dBv0pGB/Rectangle-4288.png", 
         "title": "Good education",
@@ -120,7 +110,6 @@
         "price": 290.00
     },
     {
-        "id": 11,
         "picture": "https://i.ibb.co/1Tc0rNC/Clothing.png",
         "image":"https://i.ibb.co/kMCrDSD/Rectangle-4287.png", 
         "title": "Used Clothing Drive",
@@ -132,7 +121,6 @@
         "price": 290.00
     },
     {
-        "id": 12,
         "picture": "https://i.ibb.co/qNx19WZ/Food.png",
         "image":"https://i.ibb.co/VmHCtL1/Rectangle-4287-2.png", 
         "title": "Better Food for Everyone",
