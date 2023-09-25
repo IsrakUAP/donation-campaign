@@ -1,7 +1,7 @@
-
+import { NavLink } from "react-router-dom";
 
 const Card = ({ card }) => {
-    const { title, category, category_bg_color, card_bg_color, picture, text_button_bg_color } = card;
+    const { title, category, category_bg_color, card_bg_color, picture, text_button_bg_color} = card ||{};
     const categoryStyle = {
         color: category_bg_color
     };
@@ -14,7 +14,9 @@ const Card = ({ card }) => {
 }
 return (
     <div>
+         <NavLink to={`/donationdetails/${category}`}>
         <div style={cardBgColor} className="card shadow-xl">
+       
             <figure><img src={picture} /></figure>
             <div className="card-body">
             <div style={textButtonBgColor} className="w-[87px] h-[25px] rounded-[4px] pl-2 pb-1"> <h2 style={categoryStyle} className="card-title font-medium text-[14px]">{category}</h2></div>
@@ -22,6 +24,8 @@ return (
             </div>
             
         </div>
+        </NavLink>
+        
 
     </div>
 
