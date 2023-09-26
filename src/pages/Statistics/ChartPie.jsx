@@ -27,12 +27,13 @@ const ChartPie = ({ cardBgColor }) => {
     ];
 
     return (
-        <div className='flex flex-col items-center' style={{ height: '100vh', weight: '100%' }}>
-            <PieChart width={1000} height={700}>
+        <div className='flex flex-col items-center' style={{ minHeight: '100vh', padding: '10px' }}>
+            <PieChart width={window.innerWidth < 768 ? 500 : 1000}
+                height={window.innerWidth < 768 ? 600 : 700}>
                 <Pie
                     data={data}
                     dataKey="value"
-                    outerRadius={250}
+                    outerRadius={window.innerWidth < 768 ? 100 : 250}
                     label={({ name, value }) => `${name}: ${value.toFixed(2)}%`}
                 >
                     {data.map((entry, index) => (

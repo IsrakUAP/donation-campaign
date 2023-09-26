@@ -10,6 +10,7 @@ const Home = () => {
     const [cards, setCards] = useState(initialCards);
     const [categoryFilter, setCategoryFilter] = useState('');
     const filterCards = (category) => {
+        setCategoryFilter(category)
         if (!category) {
             setCards(initialCards);
         } else {

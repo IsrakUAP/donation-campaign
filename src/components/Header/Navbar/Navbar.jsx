@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             
-            <div className="navbar bg-base-100">
+            <div className="grid grid-cols-1 text-center md:grid-cols-2 lg:navbar bg-base-100">
   <div className="flex-1">
     <img src="https://i.ibb.co/qF67VYq/Logo.png"/>
   </div>

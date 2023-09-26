@@ -19,7 +19,7 @@ const Donation = () => {
     return (
         <div>
             {noFound ? <p className=" h-[80vh] flex items-center justify-center">{noFound}</p> : <div>
-                <div className=" grid grid-cols-2 justify-center items-center gap-4">
+                <div className=" grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4">
                     {donations.slice(0, dataLength).map((card, idx) => <Donate key={idx} card={card}></Donate>)}
                 </div>
             </div>}

@@ -23,7 +23,7 @@ const CardDetails = ({card}) => {
  
     return (
         <div>
-            <div className="max-w-screen-xl grid grid-cols-1 bg-base-200 mt-8">
+            <div className=" max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl grid grid-cols-1 bg-base-200 mt-8">
  
     <img src={image} className=" w-[100%] h-[700px] shadow-2xl" />
     <div className=' -mt-[135px] p-9 bg-[#0B0B0B80]'>

@@ -19,14 +19,14 @@ const btnStyle = {
 
     return (
         <div>
-            <div style={cardBgColor} className="bg-base-200 flex items-center gap-2 w-[648px] h-[200px] mx-auto">
+            <div style={cardBgColor} className="bg-base-200 flex items-center gap-2 w-auto md:w-[648px] h-[200px] mx-auto">
     <img src={picture}/>
-    <div className=" space-y-3">
+    <div className=" space-y-1">
       <div style={textButtonBgColor } className="w-[87px] h-[25px] rounded-[4px] pl-2 pb-1"><h1 style={categoryStyle} className="card-title font-medium text-[14px]">{category}</h1></div>
       <p className="text-xl font-semibold">{title}</p>
-      <p style={categoryStyle}>${price}</p>
+      <p style={categoryStyle} className="font-semibold">${price}</p>
       <NavLink to={`/donationdetails/${category}`}>
-      <button style={btnStyle} className="btn text-white">View Details</button>
+      <button style={btnStyle} className="btn text-white mt-4">View Details</button>
       </NavLink>
     </div>
   </div>
