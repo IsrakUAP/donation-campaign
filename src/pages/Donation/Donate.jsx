@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 
 const Donate = ({ card }) => {
     const { title, category, category_bg_color, card_bg_color, picture, text_button_bg_color,price} = card ||{};
@@ -25,7 +25,9 @@ const btnStyle = {
       <div style={textButtonBgColor } className="w-[87px] h-[25px] rounded-[4px] pl-2 pb-1"><h1 style={categoryStyle} className="card-title font-medium text-[14px]">{category}</h1></div>
       <p className="text-xl font-semibold">{title}</p>
       <p style={categoryStyle}>${price}</p>
+      <NavLink to={`/donationdetails/${category}`}>
       <button style={btnStyle} className="btn text-white">View Details</button>
+      </NavLink>
     </div>
   </div>
 </div>
